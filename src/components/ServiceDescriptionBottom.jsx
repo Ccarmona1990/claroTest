@@ -15,7 +15,7 @@ const ServiceDescriptionBottom = ()=>{
       additionalClasses={'d-md-flex flex-row-reverse'}>
         <ActionBtn 
         action={'recargar'}
-        additionalClasses={'bg-danger bg-gradient text-white my-4 my-md-0 ms-md-2'}/>
+        additionalClasses={'bg-danger text-white my-4 my-md-0 ms-md-2'}/>
 
         <ActionBtn 
         action={'pasatiempo'}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServiceNameDescription = ({nameDescription}) => {
   return (
-    <section className='order-1 w-50 order-md-1 ps-md-3'>
+    <section className='order-1 w-wbk-50 order-md-1 ps-md-3'>
     <p className='m-0 '>{nameDescription}</p>
     </section>
   )

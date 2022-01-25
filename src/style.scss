@@ -22,6 +22,10 @@ body {
   width: 100%;
 }
 
+.w-wbk-50{
+  width: 100%;
+}
+
 .s-btn {
   width: 2.5rem;
   height: 2.5rem;
@@ -122,6 +126,9 @@ body {
   .s-md-btn {
     width: 2.5rem;
     height: 2.5rem;
+  }
+  .w-wbk-50{
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
