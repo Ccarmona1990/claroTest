@@ -22,7 +22,7 @@ export const _showExpDateModal = (value)=>({type: SHOWEXPDATEMODAL, payload: val
 export const _showBalanceInfo = (value)=>({type: SHOWBALANCEINFO, payload: value})
 export const _showBalanceInfoModal = (value)=>({type: SHOWBALANCEINFOMODAL, payload: value})
 
-export default (state = initialState, action)=>{
+const showInfoReducer = (state = initialState, action)=>{
     switch(action.type){
         case SHOWNETINFO:
             return {...state, isNetInfoShowing: action.payload,
@@ -60,3 +60,5 @@ export default (state = initialState, action)=>{
             return state
     }
 }
+
+export default showInfoReducer
