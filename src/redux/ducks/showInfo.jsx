@@ -13,7 +13,7 @@ const SHOWNETINFOMODAL = 'showNetInfoModal';
 const SHOWEXPDATE = 'showExpDate';
 const SHOWEXPDATEMODAL = 'showExpDateModal';
 const SHOWBALANCEINFO = 'showBalanceInfo';
-const SHOWBALANCEINFOMODAL = 'showBalanceInfoModal'
+const SHOWBALANCEINFOMODAL = 'showBalanceInfoModal';
 
 export const _showNetInfo = (value)=>({type: SHOWNETINFO, payload: value})
 export const _showNetInfoModal = (value)=>({type: SHOWNETINFOMODAL, payload: value})

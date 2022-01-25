@@ -10,18 +10,18 @@ import { toolTipNetInfo } from './utils/toolTip';
 
 
 function App() {
-  const isShowModal = useSelector((state)=>state.showInfo.isShowModal);
+  const isNetInfoModalShowing = useSelector((state)=>state.showInfo.isNetInfoModalShowing);
   const {name, message, icon} = toolTipNetInfo;
   
   return (
     <>
-      {isShowModal && 
+      {isNetInfoModalShowing && 
       <InformationModal
       name={name}
       message={message}
       icon={icon}/>}
 
-      <div className='container px-3 px-xl-5 py-3  outer-margin  d-xl-flex '>
+      <div className='container px-3 px-xl-5   outer-margin  d-xl-flex '>
         
         <TopCard/>
 
