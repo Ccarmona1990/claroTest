@@ -15,7 +15,7 @@ const TopCard = () => {
         }
     });
     return (
-        <div className='container bg-white rounded-3 shadow-sm px-0 d-md-flex d-xl-block top-card my-3'>
+        <div className='container bg-white rounded-3 shadow-sm px-0 d-md-flex d-xxl-block top-card my-3'>
 
             <UserInfo/>
             
@@ -23,9 +23,9 @@ const TopCard = () => {
                 <PlanInfo 
                 name={'Plan'}
                 info={plan}
-                additionalClasses={'border-bottom mt-md-3 mt-xl-0 text-capitalize'}/>
+                additionalClasses={'border-bottom mt-md-3 mt-xxl-0 text-capitalize'}/>
                 <PlanInfo 
-                name={(size<768 || size>1200) ?'Fecha de suspención': 'Fecha de suspención:' }
+                name={(size<768 || size>1400) ?'Fecha de suspención': 'Fecha de suspención:' }
                 info={expirationDate}/>
             </section>
 

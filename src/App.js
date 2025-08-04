@@ -7,6 +7,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import './style.scss'
 import { toolTipNetInfo } from './utils/toolTip';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faHome} from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
@@ -15,13 +17,23 @@ function App() {
   
   return (
     <>
+      <header>
+        <div></div>
+        <div></div>
+        <div> 
+            <a href="https://mylearningprojects.netlify.app/">
+          <FontAwesomeIcon icon={faHome} size='2x'> 
+          </FontAwesomeIcon>
+          </a> 
+        </div>
+      </header>
       {isNetInfoModalShowing && 
       <InformationModal
       name={name}
       message={message}
       icon={icon}/>}
 
-      <div className='container px-3 px-xl-5   outer-margin  d-xl-flex '>
+      <div className='container px-3 px-xxl-5   outer-margin  d-xxl-flex '>
         
         <TopCard/>
 
