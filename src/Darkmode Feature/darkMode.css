@@ -1,0 +1,53 @@
+/**place this root on top of the css file do changes accordingly**/
+
+/* Light Mode CSS   
+:root{
+    --base-color: white;
+    --base-variant: #e0e0e0;
+    --text-color: #111528;
+    --secondary-color: #232738;
+    --primary-color: #3a435d;
+} 
+*/
+
+/* Dark Mode CSS */
+
+.darkMode{
+    --background-color: #070b1d;
+    --base-variant: #0b0f1e;
+    --text-color: #ffffff;
+    --secondary-color: #ecdede;
+    --primary-color: #b7bfd6;
+}
+
+#theme-switch{
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: 20px;
+}
+
+#theme-switch i.fa{
+    color: var(--text-color);
+}
+
+#theme-switch i:last-child{
+    display: none;
+} 
+
+.darkMode #theme-switch i:first-child{
+    display: none;
+}
+
+.darkMode #theme-switch i:last-child{
+    display: block;
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMobileAlt, faEllipsisV} from '@fortawesome/free-solid-svg-icons';
 import { customer1 } from '../utils/customerInfo';
@@ -7,7 +6,7 @@ const UserInfo = ()=> {
     const {name, lastName, phoneNumber, status} = customer1;
 
     return (
-        <section className='d-flex d-md-block justify-content-between flex-row-reverse py-4 pb-md-4 pt-md-3 px-md-3 px-4 bg-light rounded-3 user-info'>
+        <section className='d-flex d-md-block justify-content-between flex-row-reverse py-4 pb-md-4 pt-md-3 px-md-3 px-4 bg-light rounded-3 user-info '>
             <article className='text-md-end '>
                 <button className='border-0 bg-transparent '>
                     <FontAwesomeIcon icon={faEllipsisV}/>

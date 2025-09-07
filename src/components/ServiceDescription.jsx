@@ -1,4 +1,3 @@
-import React from 'react';
 import ServiceInfo from './ServiceInfo';
 import { ActionBtn } from './Btns';
 import ServiceActions from './ServiceActions';
@@ -15,7 +14,7 @@ const ServiceDescription = ()=>{
       <ServiceActions>
         <ActionBtn 
         action={'comprar internet'}
-        additionalClasses={'bg-danger bg-gradient bg-opacity-10 text-danger'}/>
+        additionalClasses={'bg-danger bg-gradient bg-opacity-10 text-danger comprarNet'}/>
       </ServiceActions>
 
       <ServiceInfo/>

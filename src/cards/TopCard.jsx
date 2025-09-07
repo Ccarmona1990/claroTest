@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import { customer1 } from '../utils/customerInfo';
 import PlanInfo from '../components/PlanInfo';
 import UserInfo from '../components/UserInfo';
@@ -16,10 +16,9 @@ const TopCard = () => {
     });
     return (
         <div className='container bg-white rounded-3 shadow-sm px-0 d-md-flex d-xxl-block top-card my-3'>
-
-            <UserInfo/>
+            <UserInfo className='topCard-1'/>
             
-            <section className='other-info'>
+            <section className='other-info topCard-2'>
                 <PlanInfo 
                 name={'Plan'}
                 info={plan}

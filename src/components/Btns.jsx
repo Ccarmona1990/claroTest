@@ -16,7 +16,7 @@ export const IconBtn = ({icon, additionalClasses, handleBtn})=> {
 export const ActionBtn = ({action, additionalClasses, handleBtn})=>{
   return (
     <button 
-    className={`p-2 px-3 service rounded-pill action-button  text-capitalize ${additionalClasses}`}
+    className={`p-2 px-3 service rounded-pill action-button text-capitalize ${additionalClasses}`}
     onClick={handleBtn}>
             <p className='m-0 light-bold '>
               {action}
@@ -28,7 +28,7 @@ export const ActionBtn = ({action, additionalClasses, handleBtn})=>{
 export const ServiceBtn = ({service, additionalClasses, handleBtn}) =>{
   return (
     <button 
-    className={`service bg-transparent px-3 py-2 text-capitalize ${additionalClasses}`}
+    className={`service serviceBtn bg-transparent px-3 py-2 text-capitalize ${additionalClasses}`}
     onClick={handleBtn}>
       {service}
     </button>

@@ -1,19 +1,22 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
-import { _showNetInfo } from '../redux/ducks/showInfo';
+import { _showNetInfo, _showExpDate, _showBalanceInfo } from '../redux/ducks/showInfo';
 
 export const InformationModal = ({name, message, icon, additionalClasses}) => {
     const dispatch = useDispatch();
 
     const handleModal = ()=>{
         dispatch(_showNetInfo(false));
+        dispatch(_showExpDate(false));
+        dispatch(_showBalanceInfo(false));
     }
     return (
-    <div className={`bg-dark bg-opacity-75 w-100 h-100 position-fixed  d-flex align-items-end z-index-1 ${additionalClasses}`}>
+    <div className={`bg-dark bg-opacity-75 w-100 h-100 position-fixed top-0 d-flex align-items-end z-index-1 ${additionalClasses}`}
+    onClick={handleModal}>
 
-        <div className='bg-dark text-light px-4 pt-2 rounded w-100 '>
+        <div className='bg-dark text-light px-4 pt-2 rounded w-100 '
+        onClick={(e)=>e.stopPropagation()}>
             
             <section className='text-end'>
                 <button 
@@ -32,13 +35,10 @@ export const InformationModal = ({name, message, icon, additionalClasses}) => {
                     {name}
                 </h5>
             </section>
-
             <p className='mb-0 py-3 fw-light '>
                 {message}
             </p>
-
         </div>
-
     </div>
     )
 };

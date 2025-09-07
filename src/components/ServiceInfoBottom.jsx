@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import {IconBtn} from './Btns';
 import ServiceData from './ServiceData';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
@@ -58,10 +58,6 @@ const ServiceInfoBottom = ()=>{
         <IconBtn 
         icon={faInfoCircle}
         handleBtn={()=>{dispatch(_showBalanceInfo((isBalanceInfoShowing === true) ? false : true ))}}/>
-
-        {/* <IconBtn 
-        icon={faInfoCircle}/> */}
-
       </aside>
     </section>
   )

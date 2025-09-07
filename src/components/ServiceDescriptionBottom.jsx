@@ -1,4 +1,3 @@
-import React from 'react';
 import { ActionBtn } from './Btns';
 import ServiceActions from './ServiceActions';
 import ServiceInfoBottom from './ServiceInfoBottom';
@@ -15,11 +14,11 @@ const ServiceDescriptionBottom = ()=>{
       additionalClasses={'d-md-flex flex-row-reverse'}>
         <ActionBtn 
         action={'recargar'}
-        additionalClasses={'bg-danger text-white my-4 my-md-0 ms-md-2'}/>
+        additionalClasses={'bg-danger text-white my-4 my-md-0 ms-md-2 recargar '}/>
 
         <ActionBtn 
         action={'pasatiempo'}
-        additionalClasses={'bg-danger bg-gradient bg-opacity-10 text-danger my-4 my-md-0 me-md-3'}/>
+        additionalClasses={'bg-danger bg-gradient bg-opacity-10 text-danger my-4 my-md-0 me-md-3 pasatiempo '}/>
       </ServiceActions>
 
       <ServiceInfoBottom/>

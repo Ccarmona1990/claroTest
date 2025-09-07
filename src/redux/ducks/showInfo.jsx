@@ -25,24 +25,22 @@ export const _showBalanceInfoModal = (value)=>({type: SHOWBALANCEINFOMODAL, payl
 const showInfoReducer = (state = initialState, action)=>{
     switch(action.type){
         case SHOWNETINFO:
-            return {...state, isNetInfoShowing: action.payload,
-            isExpDateShowing: false}
+            return {...state, 
+            isNetInfoShowing: action.payload,
+            isExpDateShowing: false,
+            isBalanceInfoShowing: false}
         case SHOWNETINFOMODAL:
             return {...state, isNetInfoModalShowing: action.payload,
-            isExpDateModalShowing: false}
-        case SHOWEXPDATE:
-            return {...state, isExpDateShowing: action.payload,
-            isNetInfoShowing: false,
-            isNetInfoModalShowing: false,
             isExpDateModalShowing: false,
-            isBalanceInfoShowing: false,
             isBalanceInfoModalShowing: false}
+        case SHOWEXPDATE:
+            return {...state, 
+            isExpDateShowing: action.payload,
+            isNetInfoShowing: false,
+            isBalanceInfoShowing: false}
         case SHOWEXPDATEMODAL:
             return {...state, isExpDateModalShowing: action.payload,
-            isNetInfoShowing: false,
             isNetInfoModalShowing: false,
-            isExpDateShowing: false,
-            isBalanceInfoShowing: false,
             isBalanceInfoModalShowing: false}
         case SHOWBALANCEINFO:
             return {...state, isBalanceInfoShowing: action.payload,
@@ -51,11 +49,8 @@ const showInfoReducer = (state = initialState, action)=>{
         case SHOWBALANCEINFOMODAL:
             return {
             ...state, isBalanceInfoModalShowing: action.payload,
-            isNetInfoShowing: false,
             isNetInfoModalShowing: false,
-            isExpDateShowing: false,
-            isExpDateModalShowing: false,
-            isBalanceInfoShowing: false}
+            isExpDateModalShowing: false}
         default:
             return state
     }
